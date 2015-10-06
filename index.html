@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="description" content="Uma simples aplicação para verificar se vale a pena você adquitir o Bilhete único mensal.">
+	<title>Bilhete Único</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="node_modules/materialize-css/dist/css/materialize.min.css"  type="text/css" rel="stylesheet" media="screen,projection">
+</head>
+<body>	
+	<header>
+		<nav class="top-nav teal">
+			<div class="container">
+				<div class="nav-wrapper">
+					<a href="javascript:void(0)" data-activates="slide-out" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>
+				</div>
+			</div>
+		</nav>
+		<ul id="slide-out" class="side-nav">
+			<li class="logo">
+				<a id="logo-container" href="javascript:void(0)" class="brand-logo">
+					LOGO
+	            </a>
+            </li>
+			<li><a href="#!">First Sidebar Link</a></li>
+			<li><a href="#!">Second Sidebar Link</a></li>
+		</ul>
+	</header>
+
+	<main>
+		<div class="container">
+			<div class="card">
+				<div class="card-image waves-effect waves-block waves-light">
+					<img class="activator" src="assets/img/train.jpg" >
+				</div>
+				<div class="card-content">
+					<span class="card-title activator grey-text text-darken-4">BILHETE ÚNICO<i class="material-icons right">more_vert</i></span>
+	      			<p>Vale a pena pagar por um bilhete único mensal?</p>
+				</div>
+				<div class="card-reveal">
+					<span class="card-title grey-text text-darken-4">BILHETE ÚNICO MENSAL<i class="material-icons right">close</i></span>
+					<p>Vale a pena pagar por um bilhete único mensal?</p>
+					<div class="col s12" action="" spendingOnTransport();>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="subway" type="number">
+								<label for="subway">Metrô</label>
+							</div>
+						</div>
+						<div class="row">
+							<div class="input-field col s12">
+								<input id="bus" type="number">
+								<label for="bus">Ônibus</label>
+							</div>
+						</div>
+						<div class="row">
+							<button id="btnSubmit" class="btn waves-effect waves-light">Submit
+								<i class="material-icons right">send</i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fixed-action-btn">
+				<a class="btn-floating btn-large red">
+					<i class="large material-icons">mode_edit</i>
+				</a>
+				<ul>
+					<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></i></a></li>
+					<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+					<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+					<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+				</ul>
+			</div>
+		</div>
+	</main>
+	<footer class="page-footer teal">
+		<div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright 2015
+            </div>
+          </div>
+	</footer>
+
+	<script src="assets/js/jquery-2.1.4.min.js"></script>
+	<script src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script src="assets/js/framework.js"></script>
+	<script src="assets/js/calculo-bilhete.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
